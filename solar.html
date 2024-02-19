@@ -1,7 +1,24 @@
 <html>
 
 <body>
-<canvas id ="solarcanvas" style="border: 1px solid;" width="800" height="900"></canvas>
+  <div style="display: flex; flex-direction: row;">
+    <div>
+      <canvas id="solarcanvas" style="border: 1px solid;" width="800" height="900"></canvas>
+    </div>
+    <div style="border: 1px solid; user-select:none; padding: 10px; font: bold;">
+      <div id="hydrogen" style="color: rgba(69, 75, 75, 0.856);">
+        Hydrogren: 0
+      </div>
+      <div id="hps"></div>
+    </div>
+
+    <div style="user-select: none;border: 1px solid;">
+      <div id="hpsCost">buy for 100</div>
+      <br>
+      <button id="buyHydrogen">get Hydrogren per second</button>
+    </div>
+  </div>
+
 </body>
 <script src="solarsystem.js"></script>
 
